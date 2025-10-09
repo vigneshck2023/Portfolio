@@ -1,0 +1,39 @@
+.footer-simple {
+  text-align: center;
+  background: #0d1525;
+  padding: 1.8rem 1rem;
+  color: #dcdcdc;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.8rem;
+}
+
+.social-icons a {
+  color: #b0bec5;
+  font-size: 1.5rem;
+  margin: 0 12px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00adb5;
+}
+
+.footer-text {
+  color: #cfd8dc;
+  margin-bottom: 0.3rem;
+}
+
+.footer-text .heart {
+  color: #ff4b5c;
+}
+
+.footer-email {
+  color: #9ea7af;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700;900&family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px; /* taller padding */
+  background: rgba(10, 15, 20, 0.85); /* glass effect */
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1.5px solid rgba(0, 173, 181, 0.2);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+  min-height: 80px;
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Dev-style tag */
+.logo-tag {
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  font-size: 2.3rem;
+  margin-left: 1.2rem;
+  color: #00adb5;
+  transition: transform 0.3s ease, color 0.3s;
+}
+
+.logo-tag:hover {
+  transform: rotate(10deg);
+  color: #4fd1c7;
+}
+
+/* Logo text */
+.nav-logo {
+  font-family: 'Exo', sans-serif;
+  font-weight: 900;
+  font-size: 2.3rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+  letter-spacing: 0.5px;
+}
+
+.nav-logo:hover {
+  color: #00adb5;
+  transform: scale(1.05);
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 36px;
+  cursor: pointer;
+}
+
+.nav-item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  position: relative;
+  transition: color 0.3s, transform 0.3s;
+  padding: 10px 0;
+}
+
+/* Hover effect: underline only */
+.nav-item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #00adb5, #4fd1c7);
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+/* Active link: remove underline, fill text with color */
+.nav-item.active {
+  color: #00adb5;
+}
+
+.nav-item.active::after {
+  width: 0; /* remove underline */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 20px 40px;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .nav-links {
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-logo, .logo-tag {
+    font-size: 2rem;
+  }
+
+  .nav-item {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .nav-logo, .logo-tag {
+    font-size: 1.7rem;
+  }
+
+  .nav-item {
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+}
