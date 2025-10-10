@@ -1,6 +1,6 @@
 import "./Skills.css";
 import { FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaNodeJs, FaCuttlefish, FaReact } from "react-icons/fa";
-import { SiExpress, SiMongodb, SiGit, SiRedux } from "react-icons/si";
+import { SiExpress, SiMongodb, SiGit, SiRedux, SiMysql } from "react-icons/si";
 
 export default function Skills() {
   const skillCategories = [
@@ -27,6 +27,7 @@ export default function Skills() {
       skills: [
         { name: "MongoDB", icon: <SiMongodb className="skill-icon" /> },
         { name: "Git", icon: <SiGit className="skill-icon" /> },
+        {name: "MySQL", icon: <SiMysql className="skill-icon" />}
       ],
     },
     {
