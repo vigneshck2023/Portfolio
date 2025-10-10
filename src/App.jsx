@@ -98,7 +98,7 @@ export default function App() {
                 </button>
                 <button className="btn btn-outline-light">
                   <a
-                    href="../Resume.pdf"
+                    href="./Resume.pdf"
                     className="viewResume"
                     target="_blank"
                   >
