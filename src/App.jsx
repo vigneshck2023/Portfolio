@@ -101,7 +101,6 @@ export default function App() {
                     href="../Resume.pdf"
                     className="viewResume"
                     target="_blank"
-                    rel="noopener noreferrer"
                   >
                     View Resume
                   </a>
