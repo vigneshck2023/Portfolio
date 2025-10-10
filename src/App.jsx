@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import Header from "./components/Header";
-import Resume from "../src/assets/Resume.pdf"
+import Resume from "../src/assets/Vignesh C K_Resume.pdf"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../src/pages/App.css";
 import Project from "./pages/Project";
