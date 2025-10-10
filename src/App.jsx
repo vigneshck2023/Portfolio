@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import Header from "./components/Header";
+import Resume from "../src/assets/Resume.pdf"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../src/pages/App.css";
 import Project from "./pages/Project";
@@ -100,7 +101,7 @@ export default function App() {
                 </button>
                 <button className="btn btn-outline-light">
                   <a
-                    href="/Resume.pdf"
+                    href={Resume}
                     className="viewResume"
                     target="_blank"
                     rel="noopener noreferrer"
