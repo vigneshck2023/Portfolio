@@ -98,7 +98,7 @@ export default function App() {
                 </button>
                 <button className="btn btn-outline-light">
                   <a
-                    href="../Resume.pdf"
+                    href="https://drive.google.com/file/d/1NVrVOm6jKV1IQBkp5lQWEgChpGIHNOpU/view?usp=sharing"
                     className="viewResume"
                     target="_blank"
                     rel="noopener noreferrer"
