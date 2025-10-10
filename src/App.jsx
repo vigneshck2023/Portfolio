@@ -23,15 +23,15 @@ export default function App() {
 
     if (isDeleting) {
       setDisplayText(currentRole.substring(0, currentIndex - 1));
-      setCurrentIndex(prev => prev - 1);
+      setCurrentIndex((prev) => prev - 1);
 
       if (currentIndex === 0) {
         setIsDeleting(false);
-        setLoopNum(prev => prev + 1);
+        setLoopNum((prev) => prev + 1);
       }
     } else {
       setDisplayText(currentRole.substring(0, currentIndex + 1));
-      setCurrentIndex(prev => prev + 1);
+      setCurrentIndex((prev) => prev + 1);
 
       if (currentIndex === currentRole.length) {
         setTimeout(() => setIsDeleting(true), pauseTime);
@@ -50,7 +50,7 @@ export default function App() {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
@@ -80,27 +80,30 @@ export default function App() {
               <div className="underline mb-4"></div>
 
               <p className="hero-tagline mb-3">
-               Passionate Full-Stack Developer crafting seamless and intuitive digital experiences.
+                Passionate Full-Stack Developer crafting seamless and intuitive
+                digital experiences.
               </p>
               <p className="hero-tech mb-4">
-                Turning ideas into impactful products <span className="tech-highlight">React</span>,{" "}
+                Turning ideas into impactful products{" "}
+                <span className="tech-highlight">React</span>,{" "}
                 <span className="tech-highlight">Node.js</span>, and{" "}
-                <span className="tech-highlight">MongoDB</span> to build
-                — building scalable, modern, and user-focused applications. 
+                <span className="tech-highlight">MongoDB</span> to build —
+                building scalable, modern, and user-focused applications.
               </p>
 
               <div className="hero-buttons mt-4">
-                <button 
+                <button
                   className="btn btn-primary me-3"
-                  onClick={() => scrollToSection('contact')}
+                  onClick={() => scrollToSection("contact")}
                 >
                   Contact Me
                 </button>
                 <button className="btn btn-outline-light">
                   <a
-                    href="./Resume.pdf"
+                    href="/Resume.pdf"
                     className="viewResume"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     View Resume
                   </a>
@@ -153,10 +156,10 @@ export default function App() {
           </div>
         </section>
 
-        <Project/>
-        <Skills/>
-        <Contact/>
-        <Footer/>
+        <Project />
+        <Skills />
+        <Contact />
+        <Footer />
       </main>
     </div>
   );
