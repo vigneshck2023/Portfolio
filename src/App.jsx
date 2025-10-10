@@ -80,14 +80,13 @@ export default function App() {
               <div className="underline mb-4"></div>
 
               <p className="hero-tagline mb-3">
-                Passionate full-stack developer crafting intuitive digital
-                experiences with modern technologies.
+               Passionate Full-Stack Developer crafting seamless and intuitive digital experiences.
               </p>
               <p className="hero-tech mb-4">
-                Specializing in <span className="tech-highlight">React</span>,{" "}
+                Turning ideas into impactful products <span className="tech-highlight">React</span>,{" "}
                 <span className="tech-highlight">Node.js</span>, and{" "}
                 <span className="tech-highlight">MongoDB</span> to build
-                scalable and user-centered applications.
+                — building scalable, modern, and user-focused applications. 
               </p>
 
               <div className="hero-buttons mt-4">
