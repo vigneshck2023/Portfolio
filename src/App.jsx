@@ -13,7 +13,7 @@ export default function App() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
 
-  const roles = ["Full Stack Developer", "Problem Solver", "Creative Thinker"];
+  const roles = ["Full Stack Developer", "Problem Solver"];
   const typingSpeed = 100;
   const deletingSpeed = 50;
   const pauseTime = 2000;
