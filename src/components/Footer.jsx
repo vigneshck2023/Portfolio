@@ -38,7 +38,7 @@ export default function Footer() {
       <p className="footer-text">
         © 2025 Vignesh C K. Made with <span className="heart">❤</span> by Vignesh.
       </p>
-      <p className="footer-email">vigneshck@gmail.com</p>
+      <p className="footer-email">vigneshck.dev@gmail.com</p>
     </footer>
   );
 }
